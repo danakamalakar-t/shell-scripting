@@ -10,7 +10,7 @@ if [ "$USERID" -ne 0 ]; then
 fi
 # Install MySQL
 
-VALIDATE {
+VALIDATE() {
     if [ $1 -ne 0 ]; then
         echo "$2 installation failed!"
         exit 1
