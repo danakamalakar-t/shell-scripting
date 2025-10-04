@@ -5,7 +5,7 @@ R="\e[31m" # Red
 G="\e[32m" # Green
 Y="\e[33m" # Yellow
 N="\e[0m"  # No Color
-LOG_FOLDER="/var/log/shell-script"
+LOGS_FOLDER="/var/log/shell-script"
 SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log" # /var/log/shell-script/16-logs.log
 
