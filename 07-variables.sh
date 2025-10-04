@@ -1,11 +1,11 @@
 #!/bin/bash
 
-START-TIME=$(date +%s)
+START_TIME=$(date +%s)
 sleep 5
-END-TIME=$(date +%s)
+END_TIME=$(date +%s)
 
-TOTAL-TIME=$((END-TIME - START-TIME))
-echo "Total time taken: $TOTAL-TIME seconds"
+TOTAL_TIME=$((END_TIME - START_TIME))
+echo "Total time taken: $TOTAL_TIME seconds"
 # Usage: ./07-variables.sh
 # Output:
 # Total time taken: 5 seconds   
