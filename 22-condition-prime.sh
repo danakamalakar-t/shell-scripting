@@ -3,7 +3,7 @@
 echo "Enter a number:"
 read number
 
-# check if the number is prime
+# check if the number is prime or not
 
 if [ $number -lt 2 ]; then
     echo "$number is not prime."
