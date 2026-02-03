@@ -25,14 +25,14 @@ else
     echo "Nginx installed successfully."
 fi
 
-# Install mongoDB
-echo "Installing mongoDB-mongosh..."
-dnf install mongodb-mongosh -y
+# Install python3
+echo "Installing python3..."
+dnf install python3 -y
 if [ $? -ne 0 ]; then
-    echo "mongoDB-mongosh installation failed!"
+    echo "python3 installation failed!"
     exit 1 
 else
-    echo "mongoDB-mongosh installed successfully."
+    echo "python3 installed successfully."
 fi
 # usage: ./23-installations1.sh
 # Output:
