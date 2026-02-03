@@ -14,7 +14,7 @@ fi
 
 VALIDATE() {
     if [ $1 -ne 0 ]; then
-        echo "$2 installation $R failed!$N"
+        echo -e "$2 installation $R failed!$N"
         exit 1
     fi
     echo "$2 installed $G successfully."
