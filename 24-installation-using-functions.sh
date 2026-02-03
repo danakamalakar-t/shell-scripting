@@ -6,7 +6,7 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 # Install MySQL
-echo "Installing MySQL..."
+
 VALIDATE() {
     if [ $1 -ne 0 ]; then
         echo "$2 installation failed!"
