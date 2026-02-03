@@ -17,11 +17,11 @@ VALIDATE() {
         echo -e "$2 installation $R failed!$N"
         exit 1
     fi
-    echo -e "$2 installed $G successfully."
+    echo -e "$2 installed $G successfully.$N"
 }
 dnf list installed mysql
 if [ $? -eq 0 ]; then
-    echo -e "${Y}MySQL is already installed.... ${Y} Skipping installation.${N}"
+    echo -e "MySQL is already installed.... ${Y} Skipping installation.${N}"
 else 
     echo "Installing MySQL..."
     dnf install mysql -y
