@@ -20,10 +20,10 @@ fi
 
 VALIDATE(){ # functions receive inputs through args just like shell script args
     if [ $1 -ne 0 ]; then
-        printf "Installing %s ... %b FAILURE %b\n" "$2" "$R" "$N" | tee -a $LOG_FILE
+        printf "Installing $2 ... $R FAILURE $N \n" | tee -a $LOG_FILE
         exit 1
     else
-        printf "Installing %s ... %b SUCCESS %b\n" "$2" "$G" "$N" | tee -a $LOG_FILE
+        printf "Installing $2 ... $G SUCCESS $N\n" | tee -a $LOG_FILE
     fi
 }   
 
